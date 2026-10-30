@@ -28,3 +28,5 @@ g++ -std=c++20 -O2 tests/test_main.cpp -o namedpipe_tests.exe
 
 ## Лицензия
 MIT
+
+<!-- verified: 2026-10-30 -->
