@@ -11,6 +11,10 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Enable MSVC Command Prompt
+        uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: x64
       - name: Build and Test
         run: |
           cl /std:c++20 /EHsc /O2 tests/test_main.cpp /Fenamedpipe_tests.exe
